@@ -1,0 +1,48 @@
+
+@import "../libs/bootstrap-5.2.0/scss/bootstrap";
+
+$principal:#B5D3DB;
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import "../libs/bootstrap-5.2.0/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: #283143;
+}
+.custom-class {
+    display: none;
+}
+@include media-breakpoint-up(x5) {
+    .custom-class {
+        display: block;
+        background: #DAD2C7;
+        height: 300px;
+    }
+}
+@include media-breakpoint-up(sm) {
+    .custom-class {
+        display: block;
+        background: #5A8DAB;
+        height: 200px;
+    }
+}
+@include media-breakpoint-up(md) {
+    .custom-class {
+        display: flex;
+        background: #43617D;
+        height: 400px;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .custom-class {
+        display: flex;
+        background: #023535;
+        height: 200px;
+    }
+}
