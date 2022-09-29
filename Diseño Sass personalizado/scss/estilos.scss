@@ -1,0 +1,98 @@
+@import"../libs/bootstrap-5.2.0/scss/bootstrap";
+
+$principal: rgb(170, 31, 31);
+
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$btn-padding-y: 0.8rem;
+$btn-padding-x: 1.5rem;
+$btn-border-radius: 1rem;
+
+@import"../libs/bootstrap-5.2.0/scss/bootstrap";
+
+.btn-primary {
+    border-bottom: 3px solid rgba(10, 9, 0.9);
+}
+
+.custom-class {
+    display: none;
+    }
+
+@include media-breakpoint-up(xs) {
+    .custom-class{
+        display: block;
+        background-image: url("../img/Pic4.jpg");
+        height: 300px;
+    }
+
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class{
+        display: block;
+        background-image: url("../img/Pic3.jpg");
+        height: 200px;
+    }
+
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class{
+        display: flex;
+        background-image: url("../img/Pic2.jpg");
+        height: 400px;
+    }
+
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class{
+        display: flex;
+        background-image: url("../img/Pic1.jpg");
+        height: 400px;
+    }
+
+}
+
+#Titulo{
+    font-family: 'Yeon Sung';
+}
+
+
+
+.custom-class2{
+    display: none;
+}
+
+
+@include media-breakpoint-up(xs) {
+    .custom-class2{
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+@include media-breakpoint-up(sm) {
+    .custom-class2{
+        display:block;
+        margin-top: 70px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .custom-class2{
+        display:flex;
+        margin-top: 130px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .custom-class2{
+        display: flex;
+        margin-top: 110px;
+        height: 190px;
+        width: 500px;
+    }
+}
