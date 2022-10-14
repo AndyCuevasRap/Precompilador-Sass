@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+:root {
+    --first-color: #595aac;
+    --first-color-ligth: #344fff;
+    --first-color-lighten: #272727;
+
+    --body-font:'Covered By Your Grace', cursive;
+    --normal-font-size-: 1rem;
+    --small-font-size: .813rem;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: gray;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    color: var(--first-color-ligth)
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.drop,
+.drop_container {
+    display: grid;
+}
+
+.drop {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop_container {
+    row-gap: 1rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 16px #E1E1E1;
+}
+
+.drop_card,
+.drop_data {
+    display: flex;
+    align-items: center;
+}
+
+.drop_card {
+    width: 500px;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem .75rem .75rem;
+    background-color: var(--first-color-lighten);
+    box-shadow: 4px 4px 16px #000d83, -2px -2px 16px rgba(0, 247, 255, 0.644);
+    border-radius: 2.5rem;
+}
+
+.drop_img {
+    width: 50px;
+    height: 55px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.drop_nombre {
+    font-size: var(--normal-font-size-);
+    color: var(--first-color);
+    font-weight: 700;
+}
+.drop_name{
+    color: #FFF;
+}
+
+.drop_perfil {
+    font-size: var(--small-font-size);
+    color: var(--first-color-ligth);
+}
+
+.drop_social {
+    margin: 0.375rem;
+    color: var(--first-color-ligth);
+    transition: 0.4s;
+}
+
+.drop_profile {
+    font-size: var(--normal-font-size);
+    margin-left: 10px;
+    color: #FFF;
+}
+
+.drop-email {
+    font-size: var(--small-font-size);
+    color: var(--first-color-ligth);
+}
+
+.drop_social:hover {
+    color: var(--first-color);
+}
+
+.sortbale-shosen {
+    box-shadow: 8px 8px 32px #E1E1E1;
+}
+
+.sortbale-drag {
+    opacity: 0;
+}
